@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <OutputType>WinExe</OutputType>
+	  <TargetFramework>net8.0-windows</TargetFramework>
+	  <Nullable>enable</Nullable>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <UseWPF>true</UseWPF>
+	  <ApplicationVisualStyles>true</ApplicationVisualStyles>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="MainWindow2.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="MainWindow2.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="QRCoder" Version="1.8.0" />
+	  <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+	  <PackageReference Include="HttpMultipartParser" Version="10.0.0" />
+  </ItemGroup>
+
+</Project>
